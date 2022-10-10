@@ -8,7 +8,7 @@
         Title="Estaciones" Height="450" Width="800" MinHeight="400" MinWidth="200" Icon="Imagenes\128.ico">
     <Grid>
         <DockPanel>
-            <TextBlock TextAlignment="Center" DockPanel.Dock="Top" FontFamily="Frank Ruehl CLM BoldOblique" FontSize="36">
+            <TextBlock TextAlignment="Center" DockPanel.Dock="Top" FontFamily="Arial Narrow"  FontSize="40">
                 <TextBlock.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF5C6CE6" Offset="0.08"/>
