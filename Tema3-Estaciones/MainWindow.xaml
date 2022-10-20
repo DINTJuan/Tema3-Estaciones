@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:Tema3_Estaciones"
         mc:Ignorable="d"
         Title="Estaciones" Height="450" Width="800" MinHeight="400" MinWidth="200" Icon="Imagenes\128.ico">
-    <Grid>
-        <DockPanel>
+    <Window.Resources>
+        <Style TargetType="{x:Type ScrollViewer}" x:Key="Dibujo">
+            <Setter Property="Margin" Value="1"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
             <TextBlock TextAlignment="Center" DockPanel.Dock="Top" FontFamily="Arial Narrow"  FontSize="40">
                 <TextBlock.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -21,19 +25,18 @@
                 </UIElement.Effect>
                 Las 4 estaciones</TextBlock>
             <UniformGrid>
-                <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
                     <Image Source="Imagenes\invierno.jpg"></Image>
                 </ScrollViewer>
-                <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
                     <Image Source="Imagenes\primavera.jpg"></Image>
                 </ScrollViewer>
-                <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
                     <Image Source="Imagenes\verano.jpg"></Image>
                 </ScrollViewer>
-                <ScrollViewer Margin="5" HorizontalScrollBarVisibility="Auto">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
                     <Image Source="Imagenes\otoño.jpg"></Image>
                 </ScrollViewer>
             </UniformGrid>
         </DockPanel>
-    </Grid>
 </Window>
